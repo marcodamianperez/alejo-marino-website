@@ -1,0 +1,14 @@
+{
+  "name": "alejo3.0",
+  "version": "1.0.0",
+  "description": "alejo website",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass sass/main.scss dist/css/main.css --watch"
+  },
+  "author": "Marco Pérez",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.26.10"
+  }
+}

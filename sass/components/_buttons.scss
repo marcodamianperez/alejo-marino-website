@@ -1,0 +1,20 @@
+.btn {
+    height: 4rem;
+    width: 13rem;
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    font-family: "Oswald", sans-serif;
+    font-size: 1rem;
+    
+    &--green {
+        border: 1px solid $color-green;
+        background-color: transparent;
+        color: $color-green;
+    }
+
+    &--black {
+        background-color: $color-dark-grey;
+        color: $color-white;
+    }
+}

@@ -27,20 +27,90 @@
             
             <nav class="navbar">
                 <a href="index.html" class="logo">Alejo Marino</a>
-                <div class="hamburger"><div class="line"></div></div>
+                <div class="hamburger"><div class="hamburger__line"></div></div>
             </nav>
             
             <div class="hero">
-                <h1 class="hero__title">Administro la presencia online de tu negocio</h1>
+                <h1 class="hero__title">Administro la presencia online<br>de tu negocio</h1>
                 <p class="hero__subtitle">Social media / community manager</p>
-                <button class="btn btn--green">Mis trabajos</button>
+                <a href="#portfolio" class="btn btn--green" >Mis trabajos</a>
             </div>
+
+            <!-- Hidden menu -->
+            <nav class="menu">
+                <div class="cross"><div class="cross__line"></div></div>
+
+                <div class="menu-flex-container">
+                    <!-- Navigation links -->
+                    <ul class="menu__list">
+                        <li class="menu__item"><a href="#portfolio">Experiencia</a></li>
+                        <li class="menu__item"><a href="#services">Servicios</a></li>
+                        <li class="menu__item"><a href="#about">Sobre mi</a></li>
+                        <li class="menu__item"><a href="#contact">Contacto</a></li>
+                    </ul>
+    
+                    <!-- Social links -->
+                    <ul class="menu-social__list">
+                        <li class="menu-social__item"><a href="mailto:alejoeldebermejo@hotmail.com">
+                            <div class="icon-circle">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                        </a></li>
+                        <li class="menu-social__item"><a href="https://www.telegram.org" target="_blank">
+                            <div class="icon-circle">
+                                <i class="fab fa-telegram-plane"></i>
+                            </div>
+                        </a></li>
+                        <li class="menu-social__item"><a href="https://www.twitter.com" target="_blank">
+                            <div class="icon-circle">
+                                <i class="fab fa-twitter"></i>
+                            </div>
+                        </a></li>
+                        <li class="menu-social__item"><a href="https://www.facebook.com" target="_blank">
+                            <div class="icon-circle">
+                                <i class="fab fa-facebook-f"></i>
+                            </div>
+                        </a></li>
+                        <li class="menu-social__item"><a href="https://www.instagram.com" target="_blank">
+                            <div class="icon-circle">
+                                <i class="fab fa-instagram"></i>
+                            </div>
+                        </a></li>
+                    </ul>
+                </div>
+            </nav>
             
         </div>
     </header>
 
-    
-    
-    <script src="dist/js/script.js"></script>
-</body>
+    <div class="portfolio" id="portfolio">
+        <div class="container">
+
+            <h2 class="heading-secondary">
+                <div class="heading-secondary__title heading-secondary__title--black">Últimos trabajos</div>
+                <p class="heading-secondary__subtitle heading-secondary__subtitle--black">Administración digital</p>
+            </h2>
+            
+            <div class="job">
+                <div class="job__heading">
+                    <p class="job__heading--upper">Redes sociales</p>
+                    <h3 class="job__heading--main">Kraft Gym</h3>
+                </div>
+                <div class="job__image">
+                    <img src="assets/img/gym1.jpg" alt="guy lifting">
+                </div>
+                <p class="job__description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
+                </p>
+                <a href="#" class="btn btn--black-arrow">
+                    Conocer más
+                    <i class="fas fa-chevron-right"></i>
+                </a>
+            </div>
+            
+        </div>
+    </div>
+        
+        <script src="js/script.js"></script>
+    </body>
 </html>

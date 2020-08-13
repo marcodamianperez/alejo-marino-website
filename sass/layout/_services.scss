@@ -1,0 +1,41 @@
+.services {
+    background-color: $color-dark-grey;
+    padding: 4rem 0;
+
+    &__composition {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+
+        img {
+            width: 48%;
+        }
+    }
+
+    &__features {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        color: $color-green;
+    }
+}
+
+.feature-item {
+    background-color: $color-medium-grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: .8rem;
+    line-height: 1;
+
+    &__icon {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    &__text {
+        text-transform: uppercase;
+        font-size: 1rem;
+        line-height: 1.2;
+    }
+}

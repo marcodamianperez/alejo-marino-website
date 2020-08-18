@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *::after,
 *::before {
@@ -299,9 +300,34 @@ body {
 }
 
 .quote {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/img/road.jpg);
+  background-image: url(../assets/img/road.jpg);
   background-size: cover;
   background-position: center;
+  padding: 4rem 0;
+}
+.quote__container {
+  padding: 2rem 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  color: #fff;
+}
+.quote__container::before {
+  content: "“";
+  color: #25ca7f;
+  font-size: 12rem;
+  font-family: sans-serif;
+  position: absolute;
+  top: -4rem;
+  left: 2rem;
+}
+.quote__text {
+  text-align: center;
+  line-height: 2;
+}
+.quote__author {
+  text-align: right;
+  margin-top: 1.5rem;
 }
 
 .services {

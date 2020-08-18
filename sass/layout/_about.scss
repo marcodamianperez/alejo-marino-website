@@ -1,0 +1,30 @@
+.about {
+    background-color: $color-dark-grey;
+    padding: $space-medium 0;
+
+    &__flex-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__image {
+        border-radius: 50%;
+        width: 20rem;
+        margin-bottom: $space-medium;
+    }
+
+    &__text-container {
+        background-color: $color-medium-grey;
+        padding: 3rem;
+    }
+
+    &__text {
+        color: $color-green;
+        font-family: "Open Sans", sans-serif;
+        font-size: 1.4rem;
+        text-align: center;
+        line-height: 1.8;
+    }
+}

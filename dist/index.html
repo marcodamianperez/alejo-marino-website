@@ -40,7 +40,7 @@
             <nav class="menu">
                 <div class="cross"><div class="cross__line"></div></div>
 
-                <div class="menu-flex-container">
+                <div class="menu__flex-container">
                     <!-- Navigation links -->
                     <ul class="menu__list">
                         <li class="menu__item"><a href="#portfolio">Experiencia</a></li>
@@ -153,18 +153,22 @@
                 <p class="heading-secondary__subtitle heading-secondary__subtitle--green">Un puente entre tu negocio y tus clientes</p>
             </h2>
 
-            <div class="services__composition">
-                <img src="assets/img/phone.jpg" alt="mobile phone">
-                <img src="assets/img/boy-laptop.jpg" alt="boy with laptop">
+            <div class="services__flex-container">
+                <div class="services__composition">
+                    <img src="assets/img/phone.jpg" alt="mobile phone">
+                    <img src="assets/img/boy-laptop.jpg" alt="boy with laptop">
+                </div>
+
+                <div>
+                    <h3 class="heading-tertiary">
+                        La tecnología al<br>servicio de tu negocio
+                    </h3>
+        
+                    <p class="services__description">
+                        No importa si tu negocio está consolidado o si estás comenzando un emprendimiento, el marketing digital lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat..
+                    </p>
+                </div>
             </div>
-
-            <h3 class="heading-tertiary">
-                La tecnología al<br>servicio de tu negocio
-            </h3>
-
-            <p class="services__description">
-                No importa si tu negocio está consolidado o si estás comenzando un emprendimiento, el marketing digital lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat..
-            </p>
 
             <div class="services__features">
 
@@ -212,7 +216,7 @@
         </div>
     </section>
 
-    <section class="about">
+    <section class="about" id="about">
         <div class="container">
             <h2 class="heading-secondary">
                 <div class="heading-secondary__title heading-secondary__title--white">Sobre mí</div>
@@ -228,6 +232,42 @@
                     </p>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+
+            <h2 class="heading-secondary">
+                <div class="heading-secondary__title heading-secondary__title--black">Contacto</div>
+                <p class="heading-secondary__subtitle heading-secondary__subtitle--black">Comencemos un proyecto juntos</p>
+            </h2>
+
+            <p class="contact__text">
+                Por consultas comunicate conmigo completando el siguiente formulario o a través de cualquiera de mis redes sociales.
+            </p>
+
+            <form class="form">
+                <div class="form__field">
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name">
+                </div>
+
+                <div class="form__field">
+                    <label for="email">Email</label>
+                    <input type="text" id="email">
+                </div>
+
+                <div class="form__field">
+                    <label for="messaje">Mensaje</label>
+                    <textarea id="messaje"></textarea>
+                </div>
+
+                <div class="form__field">
+                    <button class="btn btn--black">Enviar</button>
+                </div>
+            </form>
+
         </div>
     </section>
         

@@ -1,18 +1,12 @@
 .about {
     background-color: $color-dark-grey;
     padding: $space-medium 0;
-
-    &__flex-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    }
+    text-align: center;
 
     &__image {
         border-radius: 50%;
         width: 20rem;
-        margin-bottom: $space-medium;
+        margin-bottom: $space-small;
     }
 
     &__text-container {

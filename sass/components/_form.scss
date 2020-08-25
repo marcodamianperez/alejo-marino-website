@@ -1,0 +1,36 @@
+.form {
+    margin-bottom: $space-small;
+
+    &__field:not(:last-child) {
+        margin-bottom: $space-small;
+    }
+
+    label {
+        font-weight: 700;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        display: block;
+        margin-bottom: 1rem;
+    }
+
+    input,
+    textarea {
+        border: 1px solid $color-dark-grey;
+        background-color: transparent;
+        width: 100%;
+        padding: 1rem;
+        font-family: "Open Sans", sans-serif;
+        font-size: 1.6rem;
+        color: $color-text-description-light-grey;
+    }
+
+    input[type=text],
+    input[type=email] {
+        height: 4rem;
+    }
+
+    textarea {
+        height: 10rem;
+        resize: none;
+    }
+}

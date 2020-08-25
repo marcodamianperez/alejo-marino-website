@@ -54,7 +54,7 @@ body {
   letter-spacing: 1px;
 }
 
-.menu-flex-container {
+.menu__flex-container {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -147,6 +147,13 @@ body {
   margin-bottom: 2rem;
 }
 
+.contact__text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  color: #777;
+  margin-bottom: 2rem;
+}
+
 .btn {
   height: 4rem;
   width: 13rem;
@@ -179,20 +186,47 @@ body {
   font-size: 1.5rem;
 }
 
+.form {
+  margin-bottom: 2rem;
+}
+.form__field:not(:last-child) {
+  margin-bottom: 2rem;
+}
+.form label {
+  font-weight: 700;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 1rem;
+}
+.form input,
+.form textarea {
+  border: 1px solid #111517;
+  background-color: transparent;
+  width: 100%;
+  padding: 1rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  color: #777;
+}
+.form input[type=text],
+.form input[type=email] {
+  height: 4rem;
+}
+.form textarea {
+  height: 10rem;
+  resize: none;
+}
+
 .about {
   background-color: #111517;
   padding: 4rem 0;
-}
-.about__flex-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  text-align: center;
 }
 .about__image {
   border-radius: 50%;
   width: 20rem;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 .about__text-container {
   background-color: #292929;
@@ -204,6 +238,10 @@ body {
   font-size: 1.4rem;
   text-align: center;
   line-height: 1.8;
+}
+
+.contact {
+  padding: 4rem 0;
 }
 
 .main-header {

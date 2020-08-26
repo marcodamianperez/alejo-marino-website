@@ -1,0 +1,29 @@
+.menu-social__list {
+    list-style: none;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-social__item {
+    margin: 0 1rem;
+    font-size: 2.2rem;
+
+    & a {
+        color: $color-green;
+        text-decoration: none;
+
+        .icon-circle {
+            width: 4.2rem;
+            height: 4.2rem;
+            border: 2px solid $color-green;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            letter-spacing: 0;
+        }
+    }
+}

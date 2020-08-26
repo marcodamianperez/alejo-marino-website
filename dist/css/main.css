@@ -26,85 +26,6 @@ body {
   font-family: "Oswald", sans-serif;
 }
 
-.logo {
-  color: #fff;
-  font-size: 1.8rem;
-  text-transform: uppercase;
-  text-decoration: none;
-  letter-spacing: 1px;
-}
-
-.hero {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translate(0, -50%);
-  text-transform: uppercase;
-}
-.hero__title {
-  font-size: 3.8rem;
-  font-weight: 700;
-  color: #25ca7f;
-  line-height: 1.2;
-}
-.hero__subtitle {
-  color: #cecece;
-  margin: 2rem 0;
-  font-size: 1.4rem;
-  letter-spacing: 1px;
-}
-
-.menu__flex-container {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
-.menu__list {
-  list-style: none;
-  text-align: center;
-  font-size: 4rem;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-
-.menu__item {
-  padding-bottom: 0.8rem;
-}
-.menu__item a {
-  color: #25ca7f;
-  text-decoration: none;
-}
-
-.menu-social__list {
-  list-style: none;
-  font-size: 3.5rem;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  display: flex;
-  justify-content: center;
-}
-
-.menu-social__item {
-  margin: 0 1rem;
-  font-size: 2.2rem;
-}
-.menu-social__item a {
-  color: #25ca7f;
-  text-decoration: none;
-}
-.menu-social__item a .icon-circle {
-  width: 4.2rem;
-  height: 4.2rem;
-  border: 2px solid #25ca7f;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  letter-spacing: 0;
-}
-
 .heading-secondary {
   text-align: center;
   text-transform: uppercase;
@@ -137,20 +58,6 @@ body {
   color: #fff;
   line-height: 1.3;
   font-weight: 400;
-  margin-bottom: 2rem;
-}
-
-.services__description {
-  font-size: 1.4rem;
-  color: #cecece;
-  letter-spacing: 1px;
-  margin-bottom: 2rem;
-}
-
-.contact__text {
-  font-family: "Open Sans", sans-serif;
-  font-size: 1.6rem;
-  color: #777;
   margin-bottom: 2rem;
 }
 
@@ -206,7 +113,7 @@ body {
   width: 100%;
   padding: 1rem;
   font-family: "Open Sans", sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.6grem;
   color: #777;
 }
 .form input[type=text],
@@ -216,6 +123,34 @@ body {
 .form textarea {
   height: 10rem;
   resize: none;
+}
+
+.menu-social__list {
+  list-style: none;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: flex;
+  justify-content: center;
+}
+
+.menu-social__item {
+  margin: 0 1rem;
+  font-size: 2.2rem;
+}
+.menu-social__item a {
+  color: #25ca7f;
+  text-decoration: none;
+}
+.menu-social__item a .icon-circle {
+  width: 4.2rem;
+  height: 4.2rem;
+  border: 2px solid #25ca7f;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0;
 }
 
 .about {
@@ -242,6 +177,34 @@ body {
 
 .contact {
   padding: 4rem 0;
+}
+.contact__text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  color: #777;
+  margin-bottom: 2rem;
+}
+
+.footer {
+  padding: 4rem 0;
+  background-color: #111517;
+  text-align: center;
+}
+.footer .copyright,
+.footer .credits {
+  color: #25ca7f;
+  text-transform: uppercase;
+}
+.footer .copyright {
+  font-size: 1.2rem;
+  padding: 2rem;
+}
+.footer .credits {
+  font-size: 1rem;
+}
+.footer .credits a {
+  color: inherit;
+  text-decoration: none;
 }
 
 .main-header {
@@ -285,6 +248,34 @@ body {
   transform: translateY(1rem);
 }
 
+.logo {
+  color: #fff;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.hero {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  text-transform: uppercase;
+}
+.hero__title {
+  font-size: 3.8rem;
+  font-weight: 700;
+  color: #25ca7f;
+  line-height: 1.2;
+}
+.hero__subtitle {
+  color: #cecece;
+  margin: 2rem 0;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+}
+
 .menu {
   z-index: 2;
   position: fixed;
@@ -295,6 +286,26 @@ body {
   background-color: #111517;
   padding: 6rem 0;
   transition: all 300ms ease-in-out;
+}
+.menu__flex-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.menu__list {
+  list-style: none;
+  text-align: center;
+  font-size: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.menu__item {
+  padding-bottom: 0.8rem;
+}
+.menu__item a {
+  color: #25ca7f;
+  text-decoration: none;
 }
 
 .show {
@@ -406,6 +417,12 @@ body {
 }
 .services__composition img {
   width: 48%;
+}
+.services__description {
+  font-size: 1.4rem;
+  color: #cecece;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
 }
 .services__features {
   display: grid;

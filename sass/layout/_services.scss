@@ -12,6 +12,13 @@
         }
     }
 
+    &__description {
+        font-size: 1.4rem;
+        color: $color-text-light-grey;
+        letter-spacing: 1px;
+        margin-bottom: $space-small;
+    }
+
     &__features {
         display: grid;
         grid-template-columns: repeat(2, 1fr);

@@ -1,4 +1,11 @@
 .contact {
     padding: $space-medium 0;
+
+    &__text {
+        font-family: "Open Sans", sans-serif;
+        font-size: 1.6rem;
+        color: $color-text-description-light-grey;
+        margin-bottom: $space-small;
+    }
 }
 

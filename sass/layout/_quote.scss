@@ -11,6 +11,10 @@
         font-size: 1.4rem;
         color: $color-white;
 
+        @media (min-width: $tablet-portrait) {
+            font-size: 1.6rem;
+        }
+
         &::before {
             content: "\201c";
             color: $color-green;

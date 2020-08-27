@@ -15,3 +15,9 @@ $color-black: #000;
 $space-small: 2rem;
 $space-medium: 4rem;
 $space-big: 6rem;
+
+// Media queries
+// actual styles from 0xp tp 600px
+$tablet-portrait: 600px; // from 600px to 900px
+$tablet-landscape: 900px; // from 900px to 1200px
+$desktop: 1200px

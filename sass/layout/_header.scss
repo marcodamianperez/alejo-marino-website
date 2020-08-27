@@ -1,4 +1,4 @@
-.main-header {
+.header {
     height: 100vh;
     background-image: linear-gradient(rgba($color-black, 0.3), rgba($color-black, 0.3)), url("../assets/img/laptop-dark.jpg");
     background-position: center;
@@ -59,6 +59,10 @@
     left: 0;
     transform: translate(0, -50%);
     text-transform: uppercase;
+
+    @media (min-width: $tablet-portrait) {
+        width: 80%;
+    }
 
     &__title {
         font-size: 3.8rem;

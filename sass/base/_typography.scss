@@ -1,5 +1,17 @@
 html {
     font-size: 62.5%;
+
+    @media (min-width: $tablet-portrait) {
+        font-size: 68.75%;     // 1rem = 11px
+    }
+
+    @media (min-width: $tablet-landscape) {
+        font-size: 75%;  // 1rem = 12px
+    }
+
+    @media (min-width: $desktop) {
+        font-size: 81.25%;  // 1rem = 13px
+    }
 }
 
 body {

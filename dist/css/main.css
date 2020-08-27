@@ -21,6 +21,21 @@ html {
 html {
   font-size: 62.5%;
 }
+@media (min-width: 600px) {
+  html {
+    font-size: 68.75%;
+  }
+}
+@media (min-width: 900px) {
+  html {
+    font-size: 75%;
+  }
+}
+@media (min-width: 1200px) {
+  html {
+    font-size: 81.25%;
+  }
+}
 
 body {
   font-family: "Oswald", sans-serif;
@@ -93,9 +108,6 @@ body {
   font-size: 1.5rem;
 }
 
-.form {
-  margin-bottom: 2rem;
-}
 .form__field:not(:last-child) {
   margin-bottom: 2rem;
 }
@@ -204,10 +216,9 @@ body {
 }
 .footer .credits a {
   color: inherit;
-  text-decoration: none;
 }
 
-.main-header {
+.header {
   height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../assets/img/laptop-dark.jpg");
   background-position: center;
@@ -262,6 +273,11 @@ body {
   left: 0;
   transform: translate(0, -50%);
   text-transform: uppercase;
+}
+@media (min-width: 600px) {
+  .hero {
+    width: 80%;
+  }
 }
 .hero__title {
   font-size: 3.8rem;
@@ -387,6 +403,11 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 1.4rem;
   color: #fff;
+}
+@media (min-width: 600px) {
+  .quote__container {
+    font-size: 1.6rem;
+  }
 }
 .quote__container::before {
   content: "“";

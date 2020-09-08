@@ -1,5 +1,21 @@
 .portfolio {
     padding: $space-medium 0;
+
+}
+
+@media (min-width: $tablet-landscape) {
+    .portfolio {
+        background-color: $color-background-light-grey;
+    }
+}
+
+@media (min-width: $tablet-landscape) {
+    .portfolio__grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 4rem;
+        row-gap: 3rem;
+    }
 }
 
 .job {
@@ -17,9 +33,21 @@
             color: $color-green;
         }
 
+        @media (min-width: $tablet-landscape) {
+            &--upper {
+                font-size: 1rem;
+            }
+        }
+
         &--main {
             font-size: 3rem;
             color: $color-dark-grey;
+        }
+
+        @media (min-width: $tablet-landscape) {
+            &--main {
+                font-size: 2.6rem;
+            }
         }
     }
 
@@ -38,4 +66,22 @@
         font-family: "Open sans", sans-serif;
         line-height: 2;
     }
+
+    @media (min-width: $tablet-landscape) {
+        .job__description {
+            font-size: 1.3rem;
+        }
+    }
+}
+
+@media (min-width: $tablet-landscape) {
+    .job {
+        padding: 3rem 4rem;
+        background-color: $color-white;
+
+        &:not(:last-child) {
+            margin-bottom: 0;
+        }
+    }
+
 }

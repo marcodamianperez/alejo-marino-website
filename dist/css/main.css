@@ -13,6 +13,7 @@ html {
 
 .container {
   width: 85%;
+  max-width: 96rem;
   height: 100%;
   margin: 0 auto;
   position: relative;
@@ -327,7 +328,7 @@ body {
   z-index: 2;
   position: fixed;
   top: 0;
-  left: -100%;
+  left: -100vw;
   width: 100vw;
   height: 100vh;
   background-color: #111517;
@@ -392,6 +393,19 @@ body {
   padding: 4rem 0;
 }
 
+@media (min-width: 900px) {
+  .portfolio {
+    background-color: #ececec;
+  }
+}
+@media (min-width: 900px) {
+  .portfolio__grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 4rem;
+    row-gap: 3rem;
+  }
+}
 .job:not(:last-child) {
   margin-bottom: 4rem;
 }
@@ -404,9 +418,19 @@ body {
   font-weight: 700;
   color: #25ca7f;
 }
+@media (min-width: 900px) {
+  .job__heading--upper {
+    font-size: 1rem;
+  }
+}
 .job__heading--main {
   font-size: 3rem;
   color: #111517;
+}
+@media (min-width: 900px) {
+  .job__heading--main {
+    font-size: 2.6rem;
+  }
 }
 .job__image {
   margin-bottom: 2rem;
@@ -421,7 +445,21 @@ body {
   font-family: "Open sans", sans-serif;
   line-height: 2;
 }
+@media (min-width: 900px) {
+  .job .job__description {
+    font-size: 1.3rem;
+  }
+}
 
+@media (min-width: 900px) {
+  .job {
+    padding: 3rem 4rem;
+    background-color: #fff;
+  }
+  .job:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
 .quote {
   background-image: url(../assets/img/road.jpg);
   background-size: cover;

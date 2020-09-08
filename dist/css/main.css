@@ -258,7 +258,33 @@ body {
 .navbar .hamburger__line::after {
   transform: translateY(1rem);
 }
+.navbar__list {
+  display: none;
+}
 
+@media (min-width: 900px) {
+  .hamburger {
+    display: none;
+  }
+
+  .navbar__list {
+    display: flex;
+    list-style: none;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+  }
+
+  .navbar__item {
+    letter-spacing: 1px;
+  }
+  .navbar__item a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .navbar__item:not(:first-child) {
+    margin-left: 4rem;
+  }
+}
 .logo {
   color: #fff;
   font-size: 1.8rem;
@@ -277,6 +303,11 @@ body {
 @media (min-width: 600px) {
   .hero {
     width: 80%;
+  }
+}
+@media (min-width: 900px) {
+  .hero {
+    width: 70%;
   }
 }
 .hero__title {

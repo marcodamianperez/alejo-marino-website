@@ -237,6 +237,11 @@ body {
   height: 3rem;
   position: relative;
 }
+@media (min-width: 900px) {
+  .navbar .hamburger {
+    display: none;
+  }
+}
 .navbar .hamburger__line {
   position: absolute;
   top: 50%;
@@ -262,19 +267,15 @@ body {
 .navbar__list {
   display: none;
 }
-
 @media (min-width: 900px) {
-  .hamburger {
-    display: none;
-  }
-
   .navbar__list {
     display: flex;
     list-style: none;
     text-transform: uppercase;
     font-size: 1.3rem;
   }
-
+}
+@media (min-width: 900px) {
   .navbar__item {
     letter-spacing: 1px;
   }
@@ -286,6 +287,7 @@ body {
     margin-left: 4rem;
   }
 }
+
 .logo {
   color: #fff;
   font-size: 1.8rem;
@@ -392,7 +394,6 @@ body {
 .portfolio {
   padding: 4rem 0;
 }
-
 @media (min-width: 900px) {
   .portfolio {
     background-color: #ececec;
@@ -406,8 +407,18 @@ body {
     row-gap: 3rem;
   }
 }
+
 .job:not(:last-child) {
   margin-bottom: 4rem;
+}
+@media (min-width: 900px) {
+  .job {
+    padding: 3rem 4rem;
+    background-color: #fff;
+  }
+  .job:not(:last-child) {
+    margin-bottom: 0;
+  }
 }
 .job__heading {
   text-transform: uppercase;
@@ -446,20 +457,11 @@ body {
   line-height: 2;
 }
 @media (min-width: 900px) {
-  .job .job__description {
+  .job__description {
     font-size: 1.3rem;
   }
 }
 
-@media (min-width: 900px) {
-  .job {
-    padding: 3rem 4rem;
-    background-color: #fff;
-  }
-  .job:not(:last-child) {
-    margin-bottom: 0;
-  }
-}
 .quote {
   background-image: url(../assets/img/road.jpg);
   background-size: cover;
@@ -500,6 +502,13 @@ body {
   background-color: #111517;
   padding: 4rem 0;
 }
+@media (min-width: 900px) {
+  .services__flex-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}
 .services__composition {
   display: flex;
   justify-content: space-between;
@@ -507,6 +516,36 @@ body {
 }
 .services__composition img {
   width: 48%;
+}
+@media (min-width: 900px) {
+  .services__composition img {
+    width: 60%;
+    position: absolute;
+  }
+}
+@media (min-width: 900px) {
+  .services__composition .image1 {
+    left: 0;
+    top: 0;
+  }
+}
+@media (min-width: 900px) {
+  .services__composition .image2 {
+    right: 0;
+    bottom: 0;
+  }
+}
+@media (min-width: 900px) {
+  .services__composition {
+    width: 45%;
+    margin-left: 4rem;
+    position: relative;
+  }
+}
+@media (min-width: 900px) {
+  .services__text {
+    width: 55%;
+  }
 }
 .services__description {
   font-size: 1.4rem;
@@ -521,6 +560,13 @@ body {
   gap: 1rem;
   text-align: center;
   color: #25ca7f;
+}
+@media (min-width: 900px) {
+  .services__features {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: none;
+    gap: 5rem;
+  }
 }
 
 .feature-item {

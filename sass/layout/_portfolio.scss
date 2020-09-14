@@ -1,26 +1,33 @@
 .portfolio {
     padding: $space-medium 0;
 
-}
-
-@media (min-width: $tablet-landscape) {
-    .portfolio {
+    @media (min-width: $tablet-landscape) {
         background-color: $color-background-light-grey;
     }
-}
 
-@media (min-width: $tablet-landscape) {
-    .portfolio__grid-container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 4rem;
-        row-gap: 3rem;
+    &__grid-container {
+
+        @media (min-width: $tablet-landscape) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 4rem;
+            row-gap: 3rem;
+        }
     }
 }
 
 .job {
     &:not(:last-child) {
         margin-bottom: $space-medium;
+    }
+
+    @media (min-width: $tablet-landscape) {
+        padding: 3rem 4rem;
+        background-color: $color-white;
+
+        &:not(:last-child) {
+            margin-bottom: 0;
+        }
     }
 
     &__heading {
@@ -31,10 +38,8 @@
             font-size: 1.2rem;
             font-weight: 700;
             color: $color-green;
-        }
 
-        @media (min-width: $tablet-landscape) {
-            &--upper {
+            @media (min-width: $tablet-landscape) {
                 font-size: 1rem;
             }
         }
@@ -42,12 +47,10 @@
         &--main {
             font-size: 3rem;
             color: $color-dark-grey;
-        }
 
-        @media (min-width: $tablet-landscape) {
-            &--main {
+            @media (min-width: $tablet-landscape) {
                 font-size: 2.6rem;
-            }
+            }    
         }
     }
 
@@ -65,23 +68,9 @@
         font-size: 1.5rem;
         font-family: "Open sans", sans-serif;
         line-height: 2;
-    }
 
-    @media (min-width: $tablet-landscape) {
-        .job__description {
+        @media (min-width: $tablet-landscape) {
             font-size: 1.3rem;
-        }
+        }    
     }
-}
-
-@media (min-width: $tablet-landscape) {
-    .job {
-        padding: 3rem 4rem;
-        background-color: $color-white;
-
-        &:not(:last-child) {
-            margin-bottom: 0;
-        }
-    }
-
 }

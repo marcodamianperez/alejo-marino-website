@@ -13,7 +13,7 @@ html {
 
 .container {
   width: 85%;
-  max-width: 96rem;
+  max-width: 80rem;
   height: 100%;
   margin: 0 auto;
   position: relative;
@@ -109,6 +109,21 @@ body {
   font-size: 1.5rem;
 }
 
+.form__flex-container {
+  margin-bottom: 2rem;
+}
+@media (min-width: 900px) {
+  .form__flex-container {
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 900px) {
+  .form__flex-container > .form__field {
+    width: 48%;
+  }
+}
 .form__field:not(:last-child) {
   margin-bottom: 2rem;
 }
@@ -126,7 +141,7 @@ body {
   width: 100%;
   padding: 1rem;
   font-family: "Open Sans", sans-serif;
-  font-size: 1.6grem;
+  font-size: 1.6rem;
   color: #777;
 }
 .form input[type=text],
@@ -134,13 +149,13 @@ body {
   height: 4rem;
 }
 .form textarea {
+  width: 100%;
   height: 10rem;
   resize: none;
 }
 
 .menu-social__list {
   list-style: none;
-  font-size: 3.5rem;
   text-transform: uppercase;
   letter-spacing: 2px;
   display: flex;
@@ -150,6 +165,11 @@ body {
 .menu-social__item {
   margin: 0 1rem;
   font-size: 2.2rem;
+}
+@media (min-width: 900px) {
+  .menu-social__item {
+    font-size: 1.8rem;
+  }
 }
 .menu-social__item a {
   color: #25ca7f;
@@ -164,6 +184,12 @@ body {
   justify-content: center;
   align-items: center;
   letter-spacing: 0;
+}
+@media (min-width: 900px) {
+  .menu-social__item a .icon-circle {
+    width: 3.2rem;
+    height: 3.2rem;
+  }
 }
 
 .about {
@@ -563,12 +589,18 @@ body {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
+    margin-bottom: 4rem;
   }
 }
 .services__composition {
   display: flex;
   justify-content: space-between;
   margin-bottom: 2rem;
+}
+@media (min-width: 900px) {
+  .services__composition {
+    margin-bottom: 0;
+  }
 }
 .services__composition img {
   width: 48%;
@@ -608,6 +640,11 @@ body {
   color: #cecece;
   letter-spacing: 1px;
   margin-bottom: 2rem;
+}
+@media (min-width: 900px) {
+  .services__description {
+    margin-bottom: 0;
+  }
 }
 .services__features {
   display: grid;

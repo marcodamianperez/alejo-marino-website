@@ -91,6 +91,13 @@ body {
   justify-content: center;
   align-items: center;
 }
+@media (min-width: 1200px) {
+  .btn {
+    height: 3.5rem;
+    width: 12rem;
+    font-size: 1rem;
+  }
+}
 .btn--green {
   border: 1px solid #25ca7f;
   background-color: transparent;
@@ -107,6 +114,11 @@ body {
 .btn--black-arrow .fa-chevron-right {
   margin-left: 1rem;
   font-size: 1.5rem;
+}
+@media (min-width: 1200px) {
+  .btn--black-arrow .fa-chevron-right {
+    font-size: 1.3rem;
+  }
 }
 
 .form__flex-container {
@@ -255,6 +267,11 @@ body {
   text-align: center;
   line-height: 1.8;
 }
+@media (min-width: 1200px) {
+  .about__text {
+    font-size: 1.2rem;
+  }
+}
 
 .contact {
   padding: 4rem 0;
@@ -264,6 +281,11 @@ body {
   font-size: 1.6rem;
   color: #777;
   margin-bottom: 2rem;
+}
+@media (min-width: 1200px) {
+  .contact__text {
+    font-size: 1.4rem;
+  }
 }
 
 .footer {
@@ -392,6 +414,11 @@ body {
   margin: 2rem 0;
   font-size: 1.4rem;
   letter-spacing: 1px;
+}
+@media (min-width: 1200px) {
+  .hero__subtitle {
+    font-size: 1.2rem;
+  }
 }
 
 .menu {
@@ -527,6 +554,11 @@ body {
 @media (min-width: 900px) {
   .job__description {
     font-size: 1.3rem;
+  }
+}
+@media (min-width: 1200px) {
+  .job__description {
+    font-size: 1.1rem;
   }
 }
 
@@ -674,10 +706,21 @@ body {
   font-size: 3rem;
   margin-bottom: 1rem;
 }
+@media (min-width: 1200px) {
+  .feature-item__icon {
+    font-size: 2.4rem;
+  }
+}
 .feature-item__text {
   text-transform: uppercase;
   font-size: 1.4rem;
   line-height: 1.2;
+}
+@media (min-width: 1200px) {
+  .feature-item__text {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

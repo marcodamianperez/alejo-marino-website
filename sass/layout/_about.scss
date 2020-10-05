@@ -62,5 +62,9 @@
         font-size: 1.4rem;
         text-align: center;
         line-height: 1.8;
+
+        @media (min-width: $desktop) {
+            font-size: 1.2rem;
+        }
     }
 }

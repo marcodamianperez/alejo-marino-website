@@ -6,6 +6,10 @@
         font-size: 1.6rem;
         color: $color-text-description-light-grey;
         margin-bottom: $space-small;
+
+        @media (min-width: $desktop) {
+            font-size: 1.4rem;
+        }
     }
 }
 

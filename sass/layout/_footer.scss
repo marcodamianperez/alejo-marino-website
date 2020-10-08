@@ -19,6 +19,16 @@
 
         a {
             color: inherit;
+
+            @media (min-width: $desktop) {
+                text-decoration: none;
+            }
+            
+            &:hover {
+                @media (min-width: $desktop) {
+                    text-decoration: underline;
+                }
+            }
         }
     }
 }

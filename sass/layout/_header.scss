@@ -64,14 +64,34 @@
         @media (min-width: $tablet-landscape) {
             letter-spacing: 1px;
 
-            & a {
+        }
+
+        & a {
+            @media (min-width: $tablet-landscape) {
                 color: $color-white;
                 text-decoration: none;
             }
-    
-            &:not(:first-child) {
+        }
+
+        &:not(:first-child) {
+            @media (min-width: $tablet-landscape) {
                 margin-left: 4rem;
             }
+        }
+
+        & a::after {
+            @media (min-width: $desktop) {
+                content: "";
+                display: block;
+                width: 0;
+                height: 2px;
+                background-color: $color-white;
+                transition: width 300ms ease-in-out;
+            }
+        }
+        
+        & a:hover::after {
+            width: 100%;
         }
     }
 }

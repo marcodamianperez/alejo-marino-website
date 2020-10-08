@@ -96,6 +96,14 @@
     justify-content: space-between;
     padding: .8rem;
     line-height: 1;
+    border: 2px solid transparent;
+    transition: border 300ms ease-in-out;
+
+    &:hover {
+        @media (min-width: $desktop) {
+            border: 2px solid $color-green;
+        }
+    }
     
     &__icon {
         font-size: 3rem;

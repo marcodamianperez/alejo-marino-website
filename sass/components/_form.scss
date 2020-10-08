@@ -38,7 +38,17 @@
         padding: 1rem;
         font-family: "Open Sans", sans-serif;
         font-size: 1.6rem;
-        color: $color-text-description-light-grey;
+        color: $color-black;
+        outline: none;
+        transition: all 300ms ease-in-out;
+
+        @media (min-width: $tablet-landscape) {
+            font-size: 1.4rem;
+        }
+
+        &:focus {
+            background-color: $color-background-light-grey;
+        }
     }
     
     input[type=text],
@@ -50,5 +60,9 @@
         width: 100%;
         height: 10rem;
         resize: none;
+    }
+
+    button {
+        cursor: pointer;
     }
 }

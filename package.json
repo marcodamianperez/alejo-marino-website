@@ -4,11 +4,13 @@
   "description": "alejo website",
   "main": "index.js",
   "scripts": {
-    "sass": "sass src/sass/main.scss dist/css/main.css --watch"
+    "sass": "sass src/sass/main.scss dist/css/main.css --watch",
+    "deploy": "gh-pages -d dist"
   },
   "author": "Marco Pérez",
   "license": "ISC",
   "devDependencies": {
+    "gh-pages": "^5.0.0",
     "sass": "^1.26.10"
   }
 }

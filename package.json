@@ -4,7 +4,7 @@
   "description": "alejo website",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "sass sass/main.scss dist/css/main.css --watch"
+    "sass": "sass src/sass/main.scss dist/css/main.css --watch"
   },
   "author": "Marco Pérez",
   "license": "ISC",
